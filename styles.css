@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6ebdc98;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: rgb(209, 201, 201);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+   
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border: 3px solid #a09191;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+#todo-app, #weather-app {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-app input, #weather-app input {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#todo-app button, #weather-app button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#todo-app button:hover, #weather-app button:hover {
+    background-color: #fc0202;
+}
+
+#tasks-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+
+#tasks-list li {
+    background-color: #f4f4f4;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tasks-list li .task-text {
+    flex-grow: 1;
+    margin-right: 1em;
+}
+
+#tasks-list li .edit-button, #tasks-list li .delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: blue;
+}
+
+#tasks-list li .delete-button {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input, footer form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer form button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #f00808;
+}
+
+.project1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bond {
+    margin: 0 15px;
+}
+
+.bond a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.bond a:hover {
+    color: #007BFF;
+}
+
+#tasks-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    display: block; 
+}
+
+#tasks-list li {
+    background-color: #f4f4f4;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin: 0.5em 0;
+    font-size: 1.em;
+    font-family: Arial, sans-serif;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5em;
+    font-size: 1.em;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #ff6f61; 
+}
+
+#footer i {
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+#footer .fa-facebook {
+    color: #3b5998; 
+}
+
+#footer .fa-square-instagram {
+    color: #E4405F; 
+}
+
+
+
+#contact {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgb(209, 201, 201);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#contact h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.5em;
+}
+
+.contact-info p strong {
+    color: #333;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%; 
+    max-width: 300px;
+}
+
+#display {
+    width: 100%;
+    max-width: 100%; 
+    padding: 0.5em; 
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    width: 100%;
+}
+
+.btn {
+    padding: 1em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #5eff00;
+}

@@ -1,0 +1,192 @@
+/* Navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Body of Navbar*/
+nav {
+  background: #004b91;
+  padding: 5px 40px;
+}
+
+/* Justify content for navbar content*/
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Padding*/
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+/* Padding*/
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+/* Nav Position */
+
+nav ul li.items:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+
+/* Nav Hover */
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+/* Nav Logo */
+
+nav ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+/* Nav Fonts */
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+/* Nav Hover 2 */
+
+nav ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+/* Nav Font Size */
+nav ul li i {
+  font-size: 23px;
+}
+
+/* Nav Button */
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+
+/*BreakPoint for Navbar*/
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #004b91,
+      inset 0 0 10px #004b91;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+
+/* Login Body */
+.all-body {
+  background-color: #30AADD;
+}
+
+/* Section */
+.section {
+  background-size: 100%;
+
+  padding: 75px 0px;
+
+
+}
+/* Formbox*/
+.form-box {
+  background-color: rgba(225, 225, 225, 0.5);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 1px solid white;
+  /* width: 500px; */
+}
+/*Text*/
+.text {
+  width: 500px;
+}
+/*Form BOX input*/
+.form-box input {
+  border-radius: 10px;
+}
+
+
+/*Login Button */
+.button {
+  background-image: linear-gradient(to right, #3330E4, #37E2D5, #39B5E0);
+  color: white;
+}
+/*Login Button Decoration */
+.log-in-link {
+  text-decoration: none;
+  color: #30AADD;
+}
+/*Login Button Hover */
+.log-in-link:hover {
+  color: blue;
+}
+/*Breakpoint of Login */
+@media screen and (max-width: 990px) {
+  .text {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

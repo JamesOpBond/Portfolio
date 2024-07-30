@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+/*BACKGROUND FOR WEBSITE*/
+
+body {
+  background-image: url(philippines-flag.jpg);
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  max-width: 100;
+  height: auto;
+
+
+}
+
+/* FONT FAMILY FOR NAVBAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Body of Navbar*/
+nav {
+  background: #004b91
+  padding: 5px 40px;
+}
+
+/* Justify content for navbar content*/
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Padding*/
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+/* Padding*/
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+/* Nav Position */
+
+nav ul li.items:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+
+/* Nav Hover */
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+/* Nav Logo */
+
+nav ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+/* Nav Fonts */
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+/* Nav Hover 2 */
+
+nav ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+/* Nav Font Size */
+nav ul li i {
+  font-size: 23px;
+}
+
+/* Nav Button */
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+
+/*BreakPoint for Navbar*/
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #004b91,
+      inset 0 0 10px #004b91;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+
+
+/* BODY OF TABLE */
+table {
+  background-color: #dddddd;
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  width: 80%;
+}
+
+/* STYLE FOR TD*/
+td {
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 15px;
+}
+
+/* STYLE FOR TH*/
+th {
+  border: 1px solid #969696;
+  text-align: center;
+  padding: 15px;
+}
+
+/* EVEN STYLE FOR TR*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* EVEN STYLE FOR TD*/
+td:nth-child(even) {
+  background-color: #dddddd;
+
+}
+
+/* EVEN STYLE FOR TH*/
+th:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* BREAKPOINT FOR THE TABLE*/
+
+@media screen and (max-width: 600px) {
+  td {
+    display: block;
+    border: 1px solid #000000;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    margin-left: -50%;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 1px 0;
+}
+
+/* Container for Footer */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer Padding */
+.col-md-4 {
+  padding: 0 15px;
+}
+
+
+/* H4 for Footer */
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* P for Footer */
+p {
+  margin-bottom: 20px;
+}
+
+/* Icons of the Footer */
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Socials Section */
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(201, 159, 159, 0.432);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+/* Social Section Hover */
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #646464;
+}
+
+/*Display For Footer*/
+
+.fa {
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 20px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
